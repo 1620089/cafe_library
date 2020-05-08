@@ -18,7 +18,9 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return view('top');
 });
+/*
 Route::get('/', function () {
     $users = User::all();
     return view('top', ['users' => $users ]);
 });
+*/
