@@ -3,6 +3,7 @@
 // useはディレクトリにショートカットを作成するという意味
 use App\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,7 +19,9 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return view('top');
 });
+/*
 Route::get('/', function () {
     $users = User::all();
     return view('top', ['users' => $users ]);
 });
+*/
