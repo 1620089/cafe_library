@@ -1,4 +1,4 @@
-<<?php
+<?php
 
 // useはディレクトリにショートカットを作成するという意味
 use App\User;
@@ -19,6 +19,6 @@ Route::get('/', function () {
     return view('top');
 });
 Route::get('/', function () {
-    $変数名 = User::all();
-    return view('top', ['変数名' => $変数名 ]);
+    $users = User::all();
+    return view('top', ['users' => $users ]);
 });
